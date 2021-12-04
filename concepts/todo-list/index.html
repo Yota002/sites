@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <form action="javascript:void(0);">
+            <input v-model="text" id="input-text" type="text" placeholder="Enter your text">
+            <button v-on:click="addItem()" type="submit">
+                <img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/send/v18/24px.svg"></button>
+            <ul>
+                <li v-for="item in array">
+                    {{ item }}
+                </li>
+            </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

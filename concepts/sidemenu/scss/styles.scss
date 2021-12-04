@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    margin: 10px;
+    width: 48px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px whitesmoke;
+}
+
+.sidebar { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #12101d;
+}
+
+.search {
+    margin: auto;
+    padding: 12px;
+    width: 80%;
+    font-size: 20px;
+    background-color: #1e1b31;
+    border: 0;
+    border-radius: 12px;
+}
+
+.search::placeholder {
+    color: rgba(100, 100, 100, 0.5);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.rank {
+    color: orangered;
+    text-shadow: 0px 0px 5px orangered;
+}

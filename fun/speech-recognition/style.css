@@ -1,0 +1,30 @@
+body, html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: grid;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+h1, p {
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  margin: 0;
+}
+
+.output {
+  font-size: 36px;
+}
+
+.button {
+  display: block;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 45px;
+}

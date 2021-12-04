@@ -1,0 +1,118 @@
+body {
+  color: #000000;
+  font-size: 10px;
+  margin: 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "A B" "C B";
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+}
+
+.category {
+  text-align: right;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: B;
+  color: #9A9A9A;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.name, .job {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: A;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.job {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: C;
+  font-weight: 300;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  display: none;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin: 12px 0;
+  text-align: center;
+  width: 76px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-shadow: 0px 0px 3px black, 1px 2px 3px black;
+  -webkit-transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav__item:hover {
+  background-color: #ebf5fc;
+}
+
+.nav__item:active {
+  border: 0.5px dashed rgba(0, 0, 0, 0.5);
+  background-color: #c4e0f6;
+}
+
+.nav__image {
+  width: 48px;
+  height: 48px;
+}
+
+.link {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  justify-items: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

@@ -1,0 +1,107 @@
+$primary_color: #000000;
+$secondary_color: #9A9A9A;
+
+body {
+    color: $primary_color;
+    font-size: 10px;
+    margin: 50px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-areas: "A B" "C B";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr auto;
+}
+
+.category {
+    text-align: right;
+    grid-area: B;
+    color: $secondary_color;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.name, .job {
+    grid-area: A;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.job {
+    grid-area: C;
+    font-weight: 300;
+}
+
+.main {
+    display: grid;
+    align-items: center;
+}
+
+.content {
+    display: none;
+}
+
+.nav {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        // grid-row-gap: 12px;
+        // grid-template-columns: repeat(7, 1fr);
+        // grid-template-rows: repeat(2, 1fr);
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin: 12px 0;
+        text-align: center;
+        width: 76px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: capitalize;
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 1),
+        1px 2px 3px rgba(0, 0, 0, 1);
+        transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &__item:hover {
+        background-color: #ebf5fc;
+    }
+
+    &__item:active {
+        border: 0.5px dashed rgba(0, 0, 0, 0.5);
+        background-color: #c4e0f6;
+    }
+
+    &__image {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.link {
+    display: inline-grid;
+    justify-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.link:hover {
+    
+}

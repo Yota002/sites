@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  min-height: 500px;
+}
+
+.background {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F0b%2F53%2Fd8%2F0b53d8d82f4ec9bd1d7d09df8f1e24e4.gif&f=1&nofb=1);
+  background-size: contain;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+}
+
+.dot {
+  --image-size: 200px;
+  position: relative;
+  height: var(--image-size);
+  width: var(--image-size);
+  top: calc(100% - var(--image-size) / 2);
+  left: calc(50% - var(--image-size) / 2);
+  background: url(https://sun9-15.userapi.com/impg/PRaDL22Vks-LbUL720m-2OoBPz_3GeFzqjOruw/6xMYPilIvgE.jpg?size=972x997&quality=96&sign=94ad367b5e2d48431d496db78c953f2b&type=album);
+  background-size: contain;
+  border: 5px solid white;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nickname {
+  position: relative;
+  left: calc(50% - 43.75px);
+  top: calc(120px);
+  color: #322a3f;
+  font-weight: 700;
+  font-size: 48px;
+}
