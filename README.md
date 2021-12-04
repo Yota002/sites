@@ -1,4 +1,5 @@
 ### Various sites developed by me
 
-- [Test task from Xpage](https://imyota.xyz/sites/xpage/)
-- [Test task from GuruGrupp](https://imyota.xyz/sites/gurugrupp/)
+- [Lucky Birthdays Rating](https://yota002.github.io/sites/lucky-birthday/)
+- [Test task from Xpage](https://yota002.github.io/sites/xpage/)
+- [Test task from GuruGrupp](https://yota002.github.io/sites/gurugrupp/)
