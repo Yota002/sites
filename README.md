@@ -1,4 +1,3 @@
-# Sites
 There are various sites developed by me.
 
 ### Fun
