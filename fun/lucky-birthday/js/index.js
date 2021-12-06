@@ -3,7 +3,7 @@ const inputMonth = document.getElementById("inputMonth");
 const button = document.getElementById("button");
 const result = document.getElementById("result");
 
-fetch("https://raw.githubusercontent.com/Yota002/sites/master/lucky-birthday/json/birthdays.json")
+fetch("https://raw.githubusercontent.com/Yota002/sites/master/fun/lucky-birthday/json/birthdays.json")
     .then((response) => response.json())
     .then((data) => {
         let birthdays = data.days;
