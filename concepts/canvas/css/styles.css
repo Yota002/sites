@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    padding: 1rem;
+}
+
+#canvas {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000;
+}
